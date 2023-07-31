@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&family=Nanum+Gothic&family=Poppins:wght@400;500&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;/* maintains size of box fixed even after adding padding*/
+}
+
+
+/* declaring variables globally so that these variables can be reuasabale
+*/
+:root{
+    --primary-text-color:#183b56 ;
+    --secondary-text-color:#577592 ;
+    --accent-color:#2294ed ;
+    --accent-color-dark:#1d69a3 ;
+    --padding-inline-section:20px 
+
+}
+body{
+    font-family: 'Poppins',sans-serif;
+    color:var(--primary-text-color);
+}
+h1{
+   font-size: 5rem; 
+}
+h2{
+    font-size:2rem;
+}
+h3{
+    font-size:1.5rem;
+}
+p{
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.25rem;
+    color:var(--secondary-text-color);
+    line-height:1.8rem;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ul{
+    list-style: none;
+}
+.small-bold-text{
+    font-size:1rem;
+    font-weight: 700;
+}
+.top-banner{
+    background-image: url('./assets/asset\ 32.png');
+    background-color: #4fb3d4;
+    background-size: 300px;/*hr 300px ke bad image repeat hogi to prevent repeat of background image use background-repeat:no-repeat*/
+}
+.container{
+    max-width:1170px;
+    margin-inline: auto;/* to create margin with start and end*/
+    padding-inline: var(--padding-inline-section);
+    overflow: hidden;
+}
+.banner-text{
+    text-align: center;
+    padding:15px 30px;
+}
+.main-nav{
+    margin-top:20px;
+    justify-content: space-between;
+    position:relative;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.company-logo img{
+    width:200px;
+}.nav-links{
+    flex-basis: 730px;
+}
+.nav-links ul{
+    justify-content: end;
+    gap:40px;
+   
+}
+.hover-links{
+    color: var(--primary-text-color);
+}
+.hover-links:hover{
+    color: var(--accent-color);
+    transition: 0.4s ease-out;
+}
+.nav-toogle{
+    display: none;
+}
+.primary-btn{
+     background-color: var(--accent-color);
+     border-radius: 6px;
+     font-weight: 700;
+     color: white !important ;/*in any circumstance we want that font color
+     should be white */
+     padding:12px 24px;
+     box-shadow: 0 0 2px var(--secondary-text-color);
+     transition:0.4s ease-out;
+     text-align:center;
+}
+.primary-btn:hover{
+   background-color: var(--accent-color-dark);
+   
+}
+.secondary-btn{
+  border :0.5px solid var(--secondary-text-color);
+  padding:12px 24px;
+  border-radius: 6px;
+  color:var(--primary-text-color) !important;
+  font-weight: 700;
+  transition:0.4s ease-out;
+}
+.secondary-btn:hover{
+    background-color: var(--accent-color);
+}
+.header-right img{
+    width:100%;
+}
+header{
+    padding: 50px var(--padding-inline-section) 0;
+
+}
+.header-section{
+    justify-content: center;
+    gap:40px;
+}
+.header-left{
+    max-width:40vw;
+
+}
+.header-left h1{
+    margin-top:20px;
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+.get-started-btn{
+    margin-top: 25px;
+}
+.company-heading{
+    text-align: center;
+    margin-block: 30px;
+    color: var(--primary-text-color);
+
+}
+.logos{
+justify-content: space-evenly;
+gap: 20px;
+ flex-wrap: wrap;/* width km hone pe images ek 
+ dusre ke niche aajainge*/
+
+}
+.company-img{
+    
+ height: 46px;
+}
+.feature-header{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.feature-section{
+    padding:80px var(--padding-inline-section) 0;
+    background-image: url(assets/asset\ 34.svg);
+   background-repeat: no-repeat;
+    background-position: center;
+
+}
+.feature-section h2{
+    margin-bottom: 20px;
+}
+.features-area{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap:20px;
+    margin-top:30px;
+}
+.features-card{
+      text-align: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 30%;
+}
+
+.feature-card img{
+    margin-top:20px;
+}
+.img-content img{
+   width:100%;
+}
+.big-feature-container{
+    margin-top: 70px;
+    gap:60px;
+ 
+}
+#second-big-feature{
+   flex-direction: row-reverse; 
+}
+.examples-section{
+    padding: 80px var(--padding-inline-section);
+}
+.examples-header{
+   flex-direction: column;
+    gap:20px
+    
+}
+.examples-header a{
+ margin-top: 10px;
+}
+.examples-area{
+    justify-content: space-between;
+    margin-block: 30px;
+    flex-wrap: wrap;
+}
+.examples-card{
+    position: relative;
+    width:23%;
+    height: 300px;
+    background: black;
+    background: linear-gradient( rgb(0,0,0,0.1),rgb(0,0,0,0.8)),url(assets/asset\ 37.jpeg);
+  
+    /*if insome browser if linear gradient doesnt work then background:black will work
+    if image is too big and is not able to reside properly in your small size div then you can use background-size:cover*/
+}
+.examples-card:nth-child(2){
+    background: linear-gradient( rgb(0,0,0,0.1),rgb(0,0,0,0.8)),url(assets/asset\ 38.jpeg);
+    background-size: cover;
+}
+
+.examples-card:nth-child(3){
+background: linear-gradient( rgb(0,0,0,0.1),rgb(0,0,0,0.8)),url(assets/asset\ 39.jpeg);
+background-size: cover;
+}
+
+.examples-card:nth-child(4){
+background: linear-gradient( rgb(0,0,0,0.1),rgb(0,0,0,0.8)),url(assets/asset\ 36.jpeg);  
+background-size: cover;
+}
+.examples-card:hover{
+    box-shadow: 0 0 10px #888;
+    transition: 0.4s ease-out;
+}
+.card-text{
+    position:absolute;
+    bottom: 10px;
+    right:20px;
+    left: 10px;
+    color: white;
+}
+.cta-section-container{
+    flex-direction: column;
+    gap: 30px;
+    color:white;
+  
+}
+.cta-section{
+    padding: 120px var(--padding-inline-section) 80px;
+    background-color: #1d69a3;
+    margin-top:30px;
+
+}
+.cta-section-container p{
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+}
+footer{
+    padding-block: 80px;/*padding-top and bootom specify krre hain*/
+    background-color: #ebf2fa;
+}
+.link-column{
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+.footer-container{
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
