@@ -278,5 +278,12 @@ footer{
     justify-content: space-between;
     align-items: flex-start;
 }
+.hover-link{
+    color: #577592;
+}
+
+.hover-link:hover{
+    color:rgb(35, 186, 216);
+}
 
 
