@@ -1,14 +1,6 @@
 
-/* there are 3 recommended breakpoints
->992px :large device
 
-medium sized device<767px
-
-small device<479px
-
-
-*/
-@media screen and (max-width:991px){/*width<992px*/
+@media screen and (max-width:991px){
     h3{
         font-size: 1.2rem;
     }
@@ -42,14 +34,14 @@ small device<479px
         gap:20px;
     }
     .examples-card{
-        width:47%;/*to create gap among cards*/
+        width:47%;
         height:180px;
     }
     .cta-section{
         padding-block:80px;
     }
 }
-@media screen and (max-width:767px) {/*give space after and otherwise code wont work*/
+@media screen and (max-width:767px) {
 
     .primary-btn{
         width: 100%;
