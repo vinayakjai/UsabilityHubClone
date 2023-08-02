@@ -2,7 +2,7 @@
 *{
     margin:0;
     padding:0;
-    box-sizing: border-box;/* maintains size of box fixed even after adding padding*/
+    box-sizing: border-box;
 }
 
 
@@ -49,11 +49,11 @@ ul{
 .top-banner{
     background-image: url('./assets/asset\ 32.png');
     background-color: #4fb3d4;
-    background-size: 300px;/*hr 300px ke bad image repeat hogi to prevent repeat of background image use background-repeat:no-repeat*/
+    background-size: 300px;
 }
 .container{
     max-width:1170px;
-    margin-inline: auto;/* to create margin with start and end*/
+    margin-inline: auto;
     padding-inline: var(--padding-inline-section);
     overflow: hidden;
 }
@@ -94,8 +94,7 @@ ul{
      background-color: var(--accent-color);
      border-radius: 6px;
      font-weight: 700;
-     color: white !important ;/*in any circumstance we want that font color
-     should be white */
+     color: white !important ;
      padding:12px 24px;
      box-shadow: 0 0 2px var(--secondary-text-color);
      transition:0.4s ease-out;
@@ -148,8 +147,7 @@ header{
 .logos{
 justify-content: space-evenly;
 gap: 20px;
- flex-wrap: wrap;/* width km hone pe images ek 
- dusre ke niche aajainge*/
+ flex-wrap: wrap;
 
 }
 .company-img{
@@ -220,8 +218,7 @@ gap: 20px;
     background: black;
     background: linear-gradient( rgb(0,0,0,0.1),rgb(0,0,0,0.8)),url(assets/asset\ 37.jpeg);
   
-    /*if insome browser if linear gradient doesnt work then background:black will work
-    if image is too big and is not able to reside properly in your small size div then you can use background-size:cover*/
+  
 }
 .examples-card:nth-child(2){
     background: linear-gradient( rgb(0,0,0,0.1),rgb(0,0,0,0.8)),url(assets/asset\ 38.jpeg);
@@ -266,7 +263,7 @@ background-size: cover;
     text-align: center;
 }
 footer{
-    padding-block: 80px;/*padding-top and bootom specify krre hain*/
+    padding-block: 80px;
     background-color: #ebf2fa;
 }
 .link-column{
